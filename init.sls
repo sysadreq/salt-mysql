@@ -1,3 +1,3 @@
 include:
-  - mysql.mysql_server
+  - mysql.server
   - mysql.config
