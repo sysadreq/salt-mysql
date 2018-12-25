@@ -1,0 +1,12 @@
+{% set mysql = salt ['grains.filter_by']({
+  'RedHat': {
+      'server': 'mariadb-server',
+      'client': 'mariadb',
+  },
+  'Debian': {
+      'server': 'mysql-server',
+      'client': 'mysql-client',
+  },
+
+}) %}
+{# add 'client' key:value pair for each OS #}
